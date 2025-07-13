@@ -2,34 +2,67 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <title>Meu Projeto Incrível</title>
-  <style>
-    body { font-family: Arial; max-width: 800px; margin: auto; padding: 20px; line-height: 1.6; }
-    h1, h2 { color: #2c3e50; }
-    a { color: #3498db; }
-    img { max-width: 100%; margin-top: 10px; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doe Fácil</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Nome do Projeto</h1>
-  <p><strong>Resumo:</strong> Breve descrição do seu projeto. O que ele faz, qual o objetivo.</p>
+  <header>
+    <img src="logo.png" alt="Logo Doe Fácil" class="logo" />
+  </header>
 
-  <h2>Funcionalidades principais</h2>
-  <ul>
-    <li>✔️ Funcionalidade 1</li>
-    <li>✔️ Funcionalidade 2</li>
-    <li>✔️ Funcionalidade 3</li>
-  </ul>
+  <main>
+    <section class="intro">
+      <h2 class="centered">Sobre o Projeto</h2>
+      <p>
+        O objetivo do projeto foi criar um sistema completo de gerenciamento de doações para 
+        Organizações Não Governamentais (ONGs), aplicando conceitos de programação orientada a objetos 
+        em C++, lógica de CRUD, persistência em banco de dados SQLite, e estrutura modular baseada 
+        em boas práticas de desenvolvimento. <br><br>
+        O sistema facilita o cadastro e a gestão de itens doados, bem como o controle de reservas e 
+        retiradas por parte das ONGs e beneficiários. Ele busca tornar o processo de doação mais 
+        transparente, organizado e rastreável, conectando doadores e instituições com uma plataforma 
+        centralizada e confiável.
+      </p>
+    </section>
 
-  <h2>Imagens/Vídeo</h2>
-  <img src="exemplo1.png" alt="Imagem do projeto">
-  <p><a href="https://youtube.com/..." target="_blank">📺 Ver vídeo demonstrativo</a></p>
+    <section class="funcionalidades">
+      <h2 class="centered">Funcionalidades principais</h2>
+      <ul>
+        <li>Doação de Itens: Doador pode cadastrar um novo item com nome, descrição, categoria e cidade.</li>
+        <li>Cadastro e controle de doações</li>
+        <li>Solicitação de Itens: ONGs podem buscar e reservar itens disponíveis.</li>
+        <li>Listagem de Usuários: Visualização de todos os doadores e ONGs registrados.</li>
+        <li>Listagem de Itens: Consulta de todos os itens com seus status (disponível, reservado, entregue).</li>
+        <li>Confirmação de Entrega: Registro da entrega de um item reservado.</li>
+        <li>Cadastro de Usuários: Suporte para registro de Doadores e ONGs.</li>
+      </ul>
+    </section>
 
-  <h2>Links importantes</h2>
-  <ul>
-    <li><a href="https://github.com/seu-usuario/seu-repo" target="_blank">📁 Repositório no GitHub</a></li>
-    <li><a href="https://seulink.com/relatorio.pdf" target="_blank">📄 Relatório (PDF)</a></li>
-    <li><a href="https://youtube.com/seuvideo" target="_blank">🎬 Vídeo no YouTube</a></li>
-  </ul>
+    <section class="midia">
+      <h2 class="centered">Imagens do Projeto</h2>
+      <img src="exemplo1.png" alt="Imagem do projeto" class="imagem-exemplo" />
+    </section>
+
+    <section class="links">
+      <h2 class="centered">Links importantes</h2>
+
+      <div class="icones-links">
+        <a href="https://github.com/guilhermebs7/doacoes-ongs" target="_blank">
+          <img src="github.png" alt="GitHub" class="icone-link" />
+        </a>
+        <a href="https://seulink.com/relatorio.pdf" target="_blank">
+          <img src="docs.png" alt="Relatório PDF" class="icone-link" />
+        </a>
+        <a href="https://www.youtube.com/watch?v=j8nAHeVKL08&list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL" target="_blank">
+          <img src="youtube.png" alt="video youtube" class="icone-link" />
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Doe Fácil - Projeto Acadêmico</p>
+  </footer>
 </body>
 </html>
